@@ -35,6 +35,9 @@
     onActivation.cleanup = "zap";  # remove anything not listed here
     onActivation.autoUpdate = true;
     onActivation.extraFlags = [ "--force" ];
+    taps = [
+      "logicnow/tap"
+    ];
     brews = [
       # core dev
       "gh"
