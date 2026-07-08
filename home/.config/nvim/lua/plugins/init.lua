@@ -31,16 +31,10 @@ return {
 
   -- File tree
   {
-    'nvim-tree/nvim-tree.lua',
+    'stevearc/oil.nvim',
     dependencies = { 'nvim-tree/nvim-web-devicons' },
-    config = function()
-      require('nvim-tree').setup({
-        view = { width = 30 },
-        renderer = { group_empty = true },
-        filters = { dotfiles = false },
-        hijack_directories = { enable = false },
-      })
-    end,
+    opts = { view_options = { show_hidden = true } },
+    keys = { { '<leader>e', '<cmd>Oil<cr>', desc = 'File Browser' } },
   },
 
   -- Fuzzy finder

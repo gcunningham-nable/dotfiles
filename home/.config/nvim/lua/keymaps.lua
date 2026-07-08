@@ -40,8 +40,6 @@ map('n', '<leader>g', '<cmd>Telescope live_grep<cr>',   { desc = 'Live grep' })
 map('n', '<leader>b', '<cmd>Telescope buffers<cr>',     { desc = 'Buffers' })
 map('n', '<leader>/', '<cmd>Telescope current_buffer_fuzzy_find<cr>', { desc = 'Search buffer' })
 
--- File tree
-map('n', '<leader>e', '<cmd>NvimTreeToggle<cr>', { desc = 'File tree' })
 
 -- LSP
 map('n', 'K',          vim.lsp.buf.hover,         { desc = 'Hover docs' })
