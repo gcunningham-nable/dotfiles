@@ -29,6 +29,10 @@ in
     syntaxHighlighting.enable = true;  # commands turn green when valid
     initContent = ''
       bindkey '^f' autosuggest-accept
+      # suppress compinit warnings for missing brew completions
+      if [[ -d /opt/homebrew/share/zsh/site-functions ]]; then
+        fpath+=(/opt/homebrew/share/zsh/site-functions)
+      fi
     '';
     shellAliases = {
       ".." = "cd ..";
