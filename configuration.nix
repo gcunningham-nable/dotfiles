@@ -36,11 +36,77 @@
     onActivation.autoUpdate = true;
     onActivation.extraFlags = [ "--force" ];
     brews = [
+      # core dev
+      "gh"
+      "git"
+      "commitizen"
+      "pre-commit"
+      "ggshield"
+      "gum"
+      "wget"
+      "curl"
+      "tmux"
+      "fswatch"
+      "graphviz"
+      "grpcurl"
+      "yq"
+      "tree-sitter"
       "herdr"
+      # kubernetes / infra
+      "kubernetes-cli"
+      "helm"
+      "kubectx"
+      "kustomize"
+      "k9s"
+      "istioctl"
+      "skaffold"
+      "tilt"
+      # terraform / cloud
+      "terraform"
+      "terraform-docs"
+      "tfenv"
+      "tfswitch"
+      "trivy"
+      "osv-scanner"
+      "gosec"
+      "awscli"
+      # go tooling
+      "go"
+      "golangci-lint"
+      "goreleaser"
+      "golang-migrate"
+      "go-air"
+      "protoc-gen-go"
+      "protobuf"
+      # data / messaging
+      "kafka"
+      "postgresql@14"
+      "liquibase"
+      # build / misc
+      "k6"
+      "maven"
+      "groovy"
+      "semtag"
+      "pinentry-mac"
+      "upx"
+      "yamllint"
+      "uv"
+      "pipx"
+      "node"
+      "python@3.13"
+      "openjdk"
+      "openjdk@17"
+      "rtk"
+      "anvil"
     ];
     casks = [
       "wezterm"
       "claude-code"
+      "postman"
+      "chipmunk"
+      "copilot-cli"
+      "git-credential-manager"
+      "font-jetbrains-mono-nerd-font"
     ];
   };
 }
