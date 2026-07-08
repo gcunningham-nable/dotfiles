@@ -5,7 +5,7 @@ let
 in
 
 {
-  home.username = user;
+  home.username = "gcunningham";
   home.homeDirectory = "/Users/${user}";
   home.stateVersion = "24.11";
   home.packages = with pkgs; [
@@ -16,6 +16,7 @@ in
     jq        # json on the command line
     lazygit
     neovim
+    gopls    # Go LSP server
     # the font everything renders in
     nerd-fonts.hack
   ];
