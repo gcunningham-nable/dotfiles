@@ -119,14 +119,21 @@ return {
     end,
   },
 
-  -- Git signs in gutter
+  -- Git signs in gutter + line blame
   {
     'lewis6991/gitsigns.nvim',
-    config = function()
-      require('gitsigns').setup({
-        signs = { add = { text = '▎' }, change = { text = '▎' }, delete = { text = '▎' } },
-      })
-    end,
+    event = 'BufWinEnter',
+    opts = {
+      signs = { add = { text = '▎' }, change = { text = '▎' }, delete = { text = '▎' } },
+      current_line_blame = true,
+    },
+  },
+
+  -- Git UI
+  {
+    'NeogitOrg/neogit',
+    dependencies = { 'nvim-lua/plenary.nvim', 'sindrets/diffview.nvim' },
+    keys = { { '<leader>g', function() require('neogit').open() end, desc = 'Neogit' } },
   },
 
   -- Auto pairs
