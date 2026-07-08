@@ -1,0 +1,9 @@
+[theme]
+name = "rose-pine"
+
+[terminal]
+shell_mode = "auto"
+new_cwd = "follow"
+
+[update]
+channel = "stable"

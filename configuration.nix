@@ -68,7 +68,6 @@
       "terraform"
       "terraform-docs"
       "tfenv"
-      "tfswitch"
       "trivy"
       "osv-scanner"
       "gosec"
@@ -97,8 +96,8 @@
       "pipx"
       "node"
       "python@3.13"
-      "openjdk"
       "openjdk@17"
+      "jenv"
       "rtk"
       "anvil"
     ];

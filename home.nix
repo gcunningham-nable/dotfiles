@@ -5,9 +5,9 @@ let
 in
 
 {
-  home.username = "gcunningham";
+  home.username = user;
   home.homeDirectory = "/Users/${user}";
-  home.stateVersion = "24.11";
+  home.stateVersion = "25.05";
   home.packages = with pkgs; [
     # cli i use constantly
     ripgrep   # fast search
@@ -65,6 +65,8 @@ in
     config.lib.file.mkOutOfStoreSymlink "${dotfiles}/home/.config/nvim";
   home.file.".config/herdr".source =
     config.lib.file.mkOutOfStoreSymlink "${dotfiles}/home/.config/herdr";
+  home.file.".config/tmux".source =
+    config.lib.file.mkOutOfStoreSymlink "${dotfiles}/home/.config/tmux";
   home.file.".claude/settings.json".source =
     config.lib.file.mkOutOfStoreSymlink "${dotfiles}/home/.claude/settings.json";
 
